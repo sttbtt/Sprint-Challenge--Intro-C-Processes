@@ -16,7 +16,8 @@ int main(int argc, char **argv)
 {
  
   // Parse command line
-  char *path = ".";
+  char dot[] = ".";
+  char *path = &dot[0];
   if (argc == 2) {
     path = argv[1];
   } else if (argc > 2) {
